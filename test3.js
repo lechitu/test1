@@ -138,7 +138,7 @@ function sortType(){
     displayBeer();
 }
 
-var arr4 = [3, 51, 34, 9, 25];
+var arr4 = [3, 51, 9, 34, 9, 25];
 document.getElementById("arr4").innerHTML = arr4;
 
 var txt2 = "";
@@ -172,3 +172,17 @@ function some(value){
 }
 var temp2 = arr4.some(some);
 document.getElementById("some").innerHTML = temp2;
+var temp3 = arr4.indexOf(9);
+document.getElementById("indexOf").innerHTML = temp3;
+var temp4 = arr4.lastIndexOf(9);
+document.getElementById("lastIndexOf").innerHTML = temp4;
+function find(value){
+    return value > 20;
+}
+var temp5 = arr4.find(find);
+document.getElementById("find").innerHTML = temp5;
+function findIndex(value){
+    return value > 20;
+}
+var temp6 = arr4.findIndex(findIndex);
+document.getElementById("findIndex").innerHTML = temp6;
