@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="test2.css">
+</head>
+<body>
+    <ul id="ul1">
+        <li id="li1"><a id="a1" href="">Home</a></li>
+        <li id="li1"><a id="a1" href="">Profile</a></li>
+        <li id="li1"><a id="a1" href="">Game</a></li>
+    </ul>
+    <header>
+        <h1>Website demo</h1>
+        <button id="time" onclick="time()">Time</button>
+    </header>
+    <section>
+        <nav>
+            <a href="https://www.facebook.com/chitu.le.33" title="Click to view profile!" target="_blank"><img id="img1" src="prime.jpg" alt="prime"></a>
+            <table id="t1">
+                <caption>profile</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Relationship</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>Lê Tam</td>
+                    <td>Father</td>
+                    <td>03699998036</td>
+                </tr>
+                <tr>
+                    <td>Cáp Thị Gái</td>
+                    <td>Mother</td>
+                    <td>0368448649</td>
+                </tr>
+                <tr>
+                    <td>Lê Chí Toản</td>
+                    <td>Brother</td>
+                    <td>03689726879</td>
+                </tr>
+            </table>
+            <p>Hobby</p>
+            <ul>
+                <li>game</li>
+                <li>window-shopping</li>
+            </ul>
+            <p>Do you know 5+6=?</p>
+            <p id="answer"></p>
+            <button type="button" onclick="sum(5, 6)">Answer</button>
+        </nav>
+        <article id="article">
+            <div class="light">
+                <button type="button" onclick="light(0)">Light</button>
+                <button type="button" onclick="light(1)">Dark</button>
+            </div>
+            <p id="translate">Translate</p>
+            <iframe id="iframe1" src="https://dictionary.cambridge.org/translate/"></iframe>
+            <p><b><a id="a2" href="https://dictionary.cambridge.org/translate/" target="_blank">More...</a></b></p>
+            
+            <p style="font-size: 30px">Cài đặt lại máy mới hoàn toàn:</p>
+            <p>Mỗi khi cần tăng tốc sau một thời gian dài sử dụng hoặc chuẩn bị bán lại / cho lại chiếc máy tính của mình, anh em thường cài lại Windows để làm máy như mới. Đây cũng là cách phổ thông mà mình nghĩ là anh em Tinh tế nào cũng nghĩ tới. Nhưng cài Win từ đầu thì mất công, sau đó phải cài thêm driver rồi update lung tung nữa mất thời gian và công sức không đáng lắm.</p>
+            <p>Để giải quyết vụ này, Windows 10 có một tùy chọn ngon hơn cho anh em: Fresh Start. Chức năng này giữ lại các file cá nhân của anh em, nó sẽ reset lại các cấu hình đã thiết lập với Windows và gỡ bỏ tất cả các app anh em đã cài thêm, chỉ giữ lại những cái có sẵn trong Windows mà thôi. Sau khi reset xong (mất chừng 20-30 phút) thì chúng ta có một cái máy chạy ổn định trở lại, và nếu anh em muốn đem máy đi bán lại thì chỉ cần xóa data cá nhân nữa là xong.</p>
+            <p>Cách sử dụng: vào Settings > Updates & Security > Recovery > "Learn how to start fresh with a clean installation of Windows.". App Windows Defender sẽ chạy lên và hiển thị giao diện Fresh Start, anh em làm theo từng bước được hướng dẫn trên màn hình là xong.</p>
+            <img id="win" src="win.jpg">
+
+            <p>Hello</p>
+            <p>world</p>
+            <p id="concat"></p>
+            <button onclick="concat()">Concat</button>
+            <p style="font-size: 30px">Infinity</p>
+            <p id="infinity"></p>
+            
+            <p style="font-size: 30px">Creat a list by Js</p>
+            <p id="list"></p>
+
+            <p style="font-size: 30px">Use push, pop, shift, unshift in Array</p>
+            <p>Example:</p>
+            <p id="push"></p>
+            <button onclick="push()">Push</button>
+            <button onclick="pop()">Pop</button>
+            <button onclick="shift()">Shift</button>
+            <button onclick="unshift()">Unshift</button>
+            <button onclick="splice()">Splice middle</button>
+            <button onclick="sort()">Sort</button>
+            <button onclick="reverse()">Reverse</button>
+
+            <p id="sort"></p>
+            <p>The highest number is <span id="highest"></span></p>
+            <p>The lowest number is <span id="lowest"></span></p>
+            <button onclick="sortNumber()">Sort</button>
+            <button onclick="reverseNumber()">Reverse</button>
+            <button onclick="random()">Random</button>
+
+            <p style="font-size: 30px">Sorting Object Arrays</p>
+            <p id="sortArray"></p>
+            <button onclick="sortYear()">Sort year</button>
+            <button onclick="sortType()">Sort type</button>
+
+            <p style="font-size: 30px">Array Iteration Methods</p>
+            <p id="arr4"></p>
+            <p style="font-size: 20px">Trả về chuỗi (forEach)</p>
+            <p id="forEach"></p>
+            <p style="font-size: 20px">Thay đổi chuỗi (Map) x2</p>
+            <p id="map"></p>
+            <p style="font-size: 20px">So sánh phần tử chuỗi (filter 20)</p>
+            <p id="filter"></p>
+            <p style="font-size: 20px">Tổng giá trị các phần tử chuỗi (reduce)</p>
+            <p id="reduce"></p>
+            <p style="font-size: 20px">Tất cả các phần tử mảng lớn hơn 20?</p>
+            <p id="every"></p>
+            <p style="font-size: 20px">Trong mảng có phần tử lớn hơn 20?</p>
+            <p id="some"></p>
+            <p>Trả về vị trí phần tử "9" đầu tiên trong mảng (indexOf)</p>
+            <p id="indexOf"></p>
+            <p>Trả về vị trí phần tử "9" cuối cùng trong mảng (lastIndexOf)</p>
+            <p id="lastIndexOf"></p>
+            
+
+        </article>
+    </section>
+    <footer id="footer">
+        <p>Creat by Prime</p>
+        
+    </footer>
+    <script src="test3.js">
+    </script>
+</body>
+</html>
