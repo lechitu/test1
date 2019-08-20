@@ -20,7 +20,8 @@ function light(a) {
 }
 
 function time() {
-    document.getElementById("time").innerHTML = Date();
+    var d = new Date();
+    document.getElementById("time").innerHTML = d.toDateString();
 }
 
 function concat() {
@@ -186,3 +187,51 @@ function findIndex(value){
 }
 var temp6 = arr4.findIndex(findIndex);
 document.getElementById("findIndex").innerHTML = temp6;
+
+function date(){
+    var toDay = new Date();
+    var someDay = new Date();
+    someDay.setFullYear(2020, 1, 1);
+    if (toDay < someDay){
+        document.getElementById("date").innerHTML = "bây giờ chưa tới năm 2020";
+    }
+    else{
+        document.getElementById("date").innerHTML = "qua khỏi năm 2020";
+    }
+}
+
+var a = 4.6;
+document.getElementById("math").innerHTML = a;
+function round(){
+    a = Math.round(a);
+    document.getElementById("math").innerHTML = a;
+}
+function pow(){
+    a = Math.pow(a, 2);
+    document.getElementById("math").innerHTML = a;
+}
+function sqrt(){
+    a = Math.sqrt(a);
+    document.getElementById("math").innerHTML = a;
+}
+function ceil(){
+    a = Math.ceil(a);
+    document.getElementById("math").innerHTML = a;
+}
+function floor(){
+    a = Math.floor(a);
+    document.getElementById("math").innerHTML = a;
+}
+function returna(){
+    document.getElementById("math").innerHTML = 4.6;
+}
+
+var b = Math.random();
+document.getElementById("random").innerHTML = b;
+function random(){
+    document.getElementById("random").innerHTML = Math.random();
+}
+document.getElementById("random10").innerHTML = Math.floor(Math.random() * 10);
+function random10(){
+    document.getElementById("random10").innerHTML = Math.floor(Math.random() * 10);
+} 
