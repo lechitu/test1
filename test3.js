@@ -273,7 +273,30 @@ switch (new Date().getDay()){
         break;
     case 6:
         dayCase = "Saturday";
-        break;
 }
 document.getElementById("dayCase").innerHTML = "Today is" + dayCase;
+var Weekend;
+switch (new Date().getDay()){
+    case 0:
+    case 6:
+        Weekend = "Today is weekend :)";
+        break;
+    default:
+        Weekend = "Looking forward to the Weekend :(";
+}
+document.getElementById("default").innerHTML = Weekend;
 
+var person1 = {name1: "tu", age1: "21"};
+var person2 = ["tu", "beo", "tym"];
+var x;
+var txt3 = "";
+for (x in person1){
+    txt3 += person1[x] + " ";
+}
+document.getElementById("forIn").innerHTML = txt3;
+var y;
+var txt4 = "";
+for (y of person2){
+    txt4 += y + " ";
+}
+document.getElementById("forOf").innerHTML = txt4;
