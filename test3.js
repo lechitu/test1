@@ -1,10 +1,17 @@
-var tu = {
-    firstName: "Tu",
-    lastName: "Le",
-    eyeColor: "black"
-}
+// var tu = {
+//     firstName: "Tu",
+//     lastName: "Le",
+//     eyeColor: "black"
+// }
 
-alert(tu.firstName + " " + tu.lastName);
+// alert(tu.firstName + " " + tu.lastName);
+
+var d = new Date();
+var t = "Good evening!";
+if (d.getHours() < 18){
+    t = "Good day!";
+}
+alert(t); 
 
 function sum(a, b) {
     document.getElementById("answer").innerHTML = a+b;
@@ -235,3 +242,38 @@ document.getElementById("random10").innerHTML = Math.floor(Math.random() * 10);
 function random10(){
     document.getElementById("random10").innerHTML = Math.floor(Math.random() * 10);
 } 
+
+function age(){
+    var age;
+    var voteAge;
+    age = document.getElementById("age").value;
+    voteAge = (age < 18) ? "Too young":"Old enough";
+    document.getElementById("textAge").innerHTML = voteAge;
+}
+
+var dayCase;
+switch (new Date().getDay()){
+    case 0:
+        dayCase = "Sunday";
+        break;
+    case 1:
+        dayCase = "Monday";
+        break;
+    case 2:
+        dayCase = "TuesDay";
+        break;
+    case 3:
+        dayCase = "Wednesday";
+        break;
+    case 4:
+        dayCase = "Thursday";
+        break;
+    case 5:
+        dayCase = "Friday";
+        break;
+    case 6:
+        dayCase = "Saturday";
+        break;
+}
+document.getElementById("dayCase").innerHTML = "Today is" + dayCase;
+
