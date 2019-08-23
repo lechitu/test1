@@ -300,3 +300,19 @@ for (y of person2){
     txt4 += y + " ";
 }
 document.getElementById("forOf").innerHTML = txt4;
+
+var temp7 = "I go to school";
+document.getElementById("text").innerHTML = temp7;
+function searchTxt(){
+    var temp8 = document.getElementById("search1").value;
+    var temp9 = temp7.search(temp8);
+    document.getElementById("search2").innerHTML = temp9;
+    try{
+        if (temp9 < 0) throw "element is not in the string";
+    }
+    catch(err){
+        document.getElementById("search2").innerHTML = err;
+    }
+}
+
+
