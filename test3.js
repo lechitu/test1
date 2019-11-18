@@ -273,6 +273,8 @@ switch (new Date().getDay()){
         break;
     case 6:
         dayCase = "Saturday";
+    default:
+        dayCase = "Unknown";
 }
 document.getElementById("dayCase").innerHTML = "Today is" + dayCase;
 var Weekend;
@@ -316,3 +318,11 @@ function searchTxt(){
 }
 
 console.log(5);
+
+var txt5 = '{"name":"Tu", "age2":22, "city":"VietNam"}';
+var Obj = JSON.parse(txt5);
+a1 = document.getElementById("json");
+a1.innerHTML = Obj.name + ", " + Obj.age2 + ", " + Obj.city;
+var txt6 = JSON.stringify(Obj);
+a2 = document.getElementById("object");
+a2.innerHTML = txt6;
